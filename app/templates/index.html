@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Proyecto tarjeta</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+</head>
+<body>
+	<div id="lector"></div>
+	<div id="tarjeta" draggable="true">
+		<input type="text" id="numero" placeholder="Ingrese un número">
+		<!-- <span id="numero">4874</span> -->
+	</div>
+	<form id="formulario" method="POST" action="/verificar">
+		<input type="hidden" name="numero" id="numeroInput">
+		<button type="submit">Verificar</button>
+	</form>
+
+	<script src="../static/js/addons.js"></script>
+</body>
+</html>
